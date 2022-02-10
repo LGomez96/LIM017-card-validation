@@ -6,9 +6,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">Tarjeta de Crédito Válida</header>
+    <!-- Para editar portada -->
+    <section class="portada">
+      <img src="imglibro.jpg" class="frontpage" alt="">
+
+    </section>
+    <!-- Para numero y nombre de tarjeta -->
+    <div class="numbereditor" id="numbereditor">
+    <form action="" id="formulario">
+    <label class="titleeditor" for="cardNumber">Número de tarjeta (01-16)
+
+    </label>
+    <input type="number" id="cardNumber" class="inputeditor" min="1"max="9999999999999999" >
+     <div id="isValid"> <p id="isValid1">
+
+    </p></div>
+    <label class="titleeditor" for="cardNumber">Nombre de Titular 
+    </label>
+    <input type="text" id="cardName" class="inputeditor">
+    
+    <button type="submit"id="btnSend" class="btnSend"> Enviar
+    </button>
+    </form>
+    </div>
+  </form>
     <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <footer> By Tata 
+      </footer>
+    <script src="index.js" type="module">
+
+    </script>
   </body>
 </html>
