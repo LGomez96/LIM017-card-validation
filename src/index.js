@@ -4,23 +4,26 @@ console.log(validator);
 
 const btnSend = document.getElementById("btnSend");
 
-      btnSend.addEventListener("click",()=>{
-         
+      btnSend.addEventListener("click",(event)=>{
+         event.preventDefault();
         const creditCardNumber = document.getElementById("cardNumber").value;
-                
+        
+        
+        //validator.sum
+          const isValidDiv = document.getElementById("isValid");
+          isValidDiv.style.display = "block";
+
+        //div.result para mostrar msj div.style.display
         if( validator.isValid(creditCardNumber) == true ){ 
-             alert("Tarjeta válida");
+             isValidDiv.innerText= validator.maskify(creditCardNumber) + " Es una tárjeta válida."
         } 
         else {
-             alert("Tarjeta inválida");
-        }
+            isValidDiv.innerText= validator.maskify(creditCardNumber) + " Es una tárjeta inválida."
+             
+        } 
 
         
-        const creditCardNumber2 = document.getElementById("cardNumber").value;
-
-
-        validator.maskify(creditCardNumber2);
-           
+      
         //ya es string le dimos una variable nueva para evitar confusiiones con isvalid 
 
       }   
