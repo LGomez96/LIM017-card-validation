@@ -6,13 +6,11 @@ const btnSend = document.getElementById("btnSend");
 
       btnSend.addEventListener("click",(event)=>{
          event.preventDefault();
-        const creditCardNumber = document.getElementById("cardNumber").value;
+         const creditCardNumber = document.getElementById("cardNumber").value;
         
-        
-        //validator.sum
           const isValidDiv = document.getElementById("isValid");
-          isValidDiv.style.display = "block";
-
+          
+          
         //div.result para mostrar msj div.style.display
         if( validator.isValid(creditCardNumber) == true ){ 
              isValidDiv.innerText= validator.maskify(creditCardNumber) + " Es una tárjeta válida."
@@ -21,7 +19,8 @@ const btnSend = document.getElementById("btnSend");
             isValidDiv.innerText= validator.maskify(creditCardNumber) + " Es una tárjeta inválida."
              
         } 
-
+       const hideNumber = document.getElementById("hide");
+       hideNumber.style.display= "none";
         
       
         //ya es string le dimos una variable nueva para evitar confusiiones con isvalid 

@@ -1,59 +1,71 @@
-*{
-    padding: 0;
-    margin: 0;
-    
-}
 
 body{
-    background: rgb(63, 13, 63);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: purple;
+    background-image: url("nebulosa.jpg");
+    background-size: cover;
+}
+header{
     margin: auto;
-    width: 90%;
-    max-width: 1000px;
-    padding: 40px 20px;
-    height: 90%;
-    color:aliceblue;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-   
-}
-body .header{
-    display: flex;
     padding: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
     color: whitesmoke;
+    font-size: large;
 }
 
+.global{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /* Editando portada */
-.portada .frontpage{
+section{
+    margin: auto;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 400px;
-    margin-bottom: 10px;
+    max-width: 800px;
+    height: 350px;
     border-radius: 5px;
+    position: relative;
     z-index: 2;
 }
+.frontpage{
+    box-shadow:  0 10px 10px 0 rgba(90,116,148,0.3);
+
+}
+
 /* Editando formulario */
 .numbereditor{
     background: #fff;
-    width: 100%;
-    padding: 50px 30px 30px 30px;
+    width: 50%;
+    padding: 100px 30px 30px 30px;
+    top: -70px;
     display: block;
-    margin-bottom: 10px;
-    font-size: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
     border: 2px solid #ced6ce;
     color: #7d8994;    
     border-radius: 5px;
+    position: relative;
     z-index: 1;
 
 }
-.titleeditor{
+.numbereditor .titleeditor{
     display: block;
     margin-bottom: 5px;
 
 }
-.btnSend{
+.numbereditor .btnSend{
     margin: 15px;
     display: block;
     margin-bottom: 5px;
@@ -65,19 +77,21 @@ body .header{
     
     
 }
-.inputeditor{
+.numbereditor .inputeditor{
   margin: 15px;  
   text-transform: uppercase;  
   box-shadow: #43474b;
 }
 #isValid {
-    /* display: none; */
     margin: 15px;
-    margin-bottom: 5px;
-    width: 20%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 40%;
     padding: 10px;
-    background: rgb(63, 13, 63);
+    background:linear-gradient(to bottom, blue, purple);
     color: #fff;
     text-align: left;
+    font-size: small;
     
 }
+
